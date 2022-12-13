@@ -40,14 +40,15 @@
   display: flex;
   margin-bottom: 0.6rem;
 }
-.container .content .box .headline ul li {
+.container .content .box .headline ul button {
   margin-right: 0.5rem;
-}
-.container .content .box .headline ul li:first-child {
   font-size: 1rem;
   border: #707070 solid 0.1rem;
   border-radius: 0.2rem;
   font-weight: normal;
+}
+.container .content .box .headline ul li {
+  margin-right: 0.5rem;
 }
 .container .content .box .ditails {
   font-size: 1rem;
@@ -61,24 +62,14 @@
   margin-bottom: 0.6rem;
   position: relative;
 }
-.container .content .box .ditails ul i {
-  position: absolute;
-  top: 50%;
-  left: 1.1rem;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-.container .content .box .ditails ul li {
-  overflow-x: scroll;
-}
-.container .content .box .ditails ul li:nth-child(2) {
+.container .content .box .ditails ul .checkBtn {
   height: auto;
   width: 2.155rem;
   display: block;
   position: relative;
+  margin-right: 0.5rem;
 }
-.container .content .box .ditails ul li:nth-child(2)::before {
+.container .content .box .ditails ul .checkBtn::before {
   content: "";
   position: absolute;
   width: 1rem;
@@ -86,10 +77,24 @@
   border: #707070 solid 0.1rem;
   border-radius: 0.2rem;
   top: 50%;
-  left: 50%;
+  left: 0%;
+  transform: translate(50%, -50%);
+  -webkit-transform: translate(50%, -50%);
+  -ms-transform: translate(50%, -50%);
+}
+.container .content .box .ditails ul i {
+  display: hidden;
+  position: absolute;
+  top: 50%;
+  left: 1.1rem;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  font-size: 0;
+}
+.container .content .box .ditails ul li {
+  overflow-x: scroll;
+  margin-right: 0.5rem;
 }
 .container .content .box .ditails ul li:nth-child(3) {
   width: 7.915rem;
@@ -103,12 +108,9 @@
 .container .content .box .ditails ul li:nth-child(6) {
   width: 3.9rem;
 }
-.container .content .box .ditails ul li:last-child {
+.container .content .box .ditails ul .change {
   border: #707070 solid 0.1rem;
   border-radius: 0.2rem;
-}
-.container .content .box .ditails ul li:not(:last-child) {
-  margin-right: 0.5rem;
 }
 .container .content .box .btn button {
   border: #707070 solid 0.1rem;

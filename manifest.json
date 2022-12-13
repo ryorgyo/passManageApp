@@ -16,7 +16,7 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["src/background/background.js"]
+      "js": ["src/background/background.js", "src/background/passlist.js"]
     }
   ]
 }

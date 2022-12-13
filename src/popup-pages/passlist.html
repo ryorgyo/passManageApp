@@ -13,6 +13,7 @@
     <title>Document</title>
   </head>
   <body>
+    <script src="src/background/passlist.js"></script>
     <div class="container">
       <header class="header">
         <div>
@@ -27,7 +28,7 @@
         <div class="box">
           <div class="headline">
             <ul>
-              <li>ALL</li>
+              <button onclick="allCheck()">ALL</button>
               <li>UserName</li>
               <li>Password</li>
               <li>SiteURL</li>
@@ -36,71 +37,71 @@
           <div class="ditails">
             <ul>
               <i class="fa-solid fa-check fa-xs"></i>
-              <li></li>
+              <button class="checkBtn" onclick="clickCheck(0)"></button>
               <li>ryorgyo</li>
               <li>hogehoge</li>
               <li>https//:google.jp</li>
-              <li>Change</li>
+              <button class="change">Change</button>
             </ul>
             <ul>
               <i class="fa-solid fa-check fa-xs"></i>
-              <li></li>
+              <button class="checkBtn" onclick="clickCheck(1)"></button>
               <li>ryorgyo</li>
               <li>hogehoge</li>
               <li>https//:google.jp</li>
-              <li>Change</li>
+              <button class="change">Change</button>
             </ul>
             <ul>
               <i class="fa-solid fa-check fa-xs"></i>
-              <li></li>
+              <button class="checkBtn" onclick="clickCheck(2)"></button>
               <li>ryorgyo</li>
               <li>hogehoge</li>
               <li>https//:google.jp</li>
-              <li>Change</li>
+              <button class="change">Change</button>
             </ul>
             <ul>
               <i class="fa-solid fa-check fa-xs"></i>
-              <li></li>
+              <button class="checkBtn" onclick="clickCheck(3)"></button>
               <li>ryorgyo</li>
               <li>hogehoge</li>
               <li>https//:google.jp</li>
-              <li>Change</li>
+              <button class="change">Change</button>
             </ul>
             <ul>
               <i class="fa-solid fa-check fa-xs"></i>
-              <li></li>
+              <button class="checkBtn" onclick="clickCheck(4)"></button>
               <li>ryorgyo</li>
               <li>hogehoge</li>
               <li>https//:google.jp</li>
-              <li>Change</li>
+              <button class="change">Change</button>
             </ul>
             <ul>
               <i class="fa-solid fa-check fa-xs"></i>
-              <li></li>
+              <button class="checkBtn" onclick="clickCheck(5)"></button>
               <li>ryorgyo</li>
               <li>hogehoge</li>
               <li>https//:google.jp</li>
-              <li>Change</li>
+              <button class="change">Change</button>
             </ul>
             <ul>
               <i class="fa-solid fa-check fa-xs"></i>
-              <li></li>
+              <button class="checkBtn" onclick="clickCheck(6)"></button>
               <li>ryorgyo</li>
               <li>hogehoge</li>
               <li>https//:google.jp</li>
-              <li>Change</li>
+              <button class="change">Change</button>
             </ul>
             <ul>
               <i class="fa-solid fa-check fa-xs"></i>
-              <li></li>
+              <button class="checkBtn" onclick="clickCheck(7)"></button>
               <li>ryorgyo</li>
               <li>hogehoge</li>
               <li>https//:google.jp</li>
-              <li>Change</li>
+              <button class="change">Change</button>
             </ul>
           </div>
           <div class="btn">
-            <button>CLEAR</button>
+            <button onclick="allClear()">CLEAR</button>
             <button>Bulk Change</button>
             <button>Bulk Delete</button>
           </div>

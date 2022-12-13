@@ -35,14 +35,15 @@
         ul {
           display: flex;
           margin-bottom: 0.6rem;
+          button {
+            margin-right: 0.5rem;
+            font-size: 1rem;
+            border: #707070 solid 0.1rem;
+            border-radius: 0.2rem;
+            font-weight: normal;
+          }
           li {
             margin-right: 0.5rem;
-            &:first-child {
-              font-size: 1rem;
-              border: #707070 solid 0.1rem;
-              border-radius: 0.2rem;
-              font-weight: normal;
-            }
           }
         }
       }
@@ -56,35 +57,39 @@
           display: flex;
           margin-bottom: 0.6rem;
           position: relative;
+          .checkBtn {
+            height: auto;
+            width: 2.155rem;
+            display: block;
+            position: relative;
+            margin-right: 0.5rem;
+            &::before {
+              content: "";
+              position: absolute;
+              width: 1rem;
+              height: 1rem;
+              border: #707070 solid 0.1rem;
+              border-radius: 0.2rem;
+              top: 50%;
+              left: 0%;
+              transform: translate(50%, -50%);
+              -webkit-transform: translate(50%, -50%);
+              -ms-transform: translate(50%, -50%);
+            }
+          }
           i {
+            display: hidden;
             position: absolute;
             top: 50%;
             left: 1.1rem;
             transform: translate(-50%, -50%);
             -webkit-transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
+            font-size: 0;
           }
           li {
             overflow-x: scroll;
-            &:nth-child(2) {
-              height: auto;
-              width: 2.155rem;
-              display: block;
-              position: relative;
-              &::before {
-                content: "";
-                position: absolute;
-                width: 1rem;
-                height: 1rem;
-                border: #707070 solid 0.1rem;
-                border-radius: 0.2rem;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                -webkit-transform: translate(-50%, -50%);
-                -ms-transform: translate(-50%, -50%);
-              }
-            }
+            margin-right: 0.5rem;
             &:nth-child(3) {
               width: 7.915rem;
             }
@@ -97,13 +102,10 @@
             &:nth-child(6) {
               width: 3.9rem;
             }
-            &:last-child {
-              border: #707070 solid 0.1rem;
-              border-radius: 0.2rem;
-            }
-            &:not(:last-child) {
-              margin-right: 0.5rem;
-            }
+          }
+          .change {
+            border: #707070 solid 0.1rem;
+            border-radius: 0.2rem;
           }
         }
       }
