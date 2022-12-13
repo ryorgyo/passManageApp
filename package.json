@@ -6,17 +6,45 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "tailwind": "npx tailwindcss-cli@latest build ./src/vendor/tailwind/import.css -o ./src/vendor/tailwind/tailwind.css"
   },
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@types/mysql": "2.15",
     "@types/node": "18.11.11",
     "@types/react": "18.0.26",
     "@types/react-dom": "18.0.9",
     "eslint": "8.29.0",
     "eslint-config-next": "13.0.6",
+    "mysql": "^2.18.1",
     "next": "13.0.6",
+    "promise-mysql": "4.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "4.9.3"
+    "serverless-mysql": "^1.5.4",
+    "typescript": "4.9.4"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.14",
+    "autoprefixer": "^10.4.13",
+    "eslint-plugin-tailwindcss": "^3.7.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^2.12.2",
+    "postcss": "^8.4.19",
+    "prettier": "^2.8.1",
+    "prettier-plugin-tailwindcss": "^0.2.0",
+    "sass": "^1.56.1",
+    "tailwindcss": "^3.2.4"
+  },
+  "requires": {
+    "chokidar ": "^2.1.8",
+    "glob-watcher ": "^3.0.0",
+    "glob-stream ": "^6.1.0",
+    "vinyl-fs ": "^2.4.2",
+    "gulp ": "^4.0.0",
+    "gulp-typescript ": "^2.13.0"
   }
 }

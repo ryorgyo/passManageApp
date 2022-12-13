@@ -1,0 +1,29 @@
+{
+  "prettier.documentSelectors": ["prettier"],
+  "explorer.confirmDragAndDrop": false,
+  "python.defaultInterpreterPath": "/Users/ryorgyo/opt/anaconda3/envs/GUIenv/bin/python",
+  "terminal.integrated.inheritEnv": false,
+  "techtrain-railway.optOutTelemetry": false,
+  "editor.formatOnSave": true,
+  "files.associations": {
+    "*.scss": "scss"
+  },
+  "typescript.format.enable": false, // 組み込みのフォーマッターは無効にする
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.tabSize": 2,
+  "files.autoSave": "onFocusChange",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  }, // Prettier を使う
+  "dartsass.targetDirectory": "/Users/ryorgyo/Documents/git-app/sample-app/src/styles/css", //どのフォルダに出力するか
+  "dartsass.autoPrefixBrowsersList": [
+    //Autoprefixerの指定
+    "> 3% in JP",
+    "ie 11",
+    "android 4.4",
+    "last 1 versions"
+  ],
+  "dartsass.outputFormat": "cssonly", //cssの出力するフォーマット cssonly、minified、bothの３つから選べる
+  "dartsass.disableSourceMap": true,
+  "dartsass.sassBinPath": "/Users/ryorgyo/Documents/git-app/sample-app/node_modules/.bin/sass"
+}

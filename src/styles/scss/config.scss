@@ -1,0 +1,60 @@
+.container {
+  color: #707070;
+  width: 38rem;
+  border: #707070 solid 0.3rem;
+  .header {
+    padding: 1rem 2rem 0 2rem;
+    div {
+      border-bottom: #707070 solid 0.1rem;
+      position: relative;
+      i {
+        position: absolute;
+      }
+      h1 {
+        width: 34rem;
+        font-size: 2rem;
+        line-height: 2.2rem;
+        font-weight: bold;
+        margin: 0 0 1rem 3.2rem;
+      }
+    }
+  }
+  .content {
+    padding: 1.6rem 2rem 1rem;
+    h2 {
+      font-size: 2rem;
+      line-height: 2rem;
+      font-weight: bold;
+    }
+    .box {
+      padding: 1.6rem 2rem 0;
+      .section {
+        margin-bottom: 2rem;
+        h3 {
+          font-size: 1.4rem;
+          line-height: 1.5rem;
+          font-weight: bold;
+        }
+        p {
+          font-size: 1rem;
+          line-height: 1.1rem;
+          display: flex;
+          margin-bottom: 0.5rem;
+          span {
+            width: 1.5rem;
+            height: 1.1rem;
+            border: #707070 solid 0.1rem;
+            border-radius: 0.2rem;
+            margin: 0 0.5rem 0;
+          }
+        }
+      }
+      .btn {
+        button {
+          border: #707070 solid 0.1rem;
+          border-radius: 0.2rem;
+        }
+      }
+    }
+  }
+}
