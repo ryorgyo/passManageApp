@@ -1,0 +1,22 @@
+{
+  "name": "PassKeeper",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "permissions": ["activeTab", "scripting"],
+  "description": "Generate strong passwords instead",
+  "icons": {
+    "16": "public/img/favicon.png",
+    "48": "public/img/favicon.png",
+    "128": "public/img/favicon.png"
+  },
+  "action": {
+    "default_icon": "public/img/favicon.png",
+    "default_popup": "src/popup-pages/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/background/background.js"]
+    }
+  ]
+}
