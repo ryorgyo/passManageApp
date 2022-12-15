@@ -39,3 +39,5 @@ const clickCheck = (num: number) => {
     checkmark.style.fontSize = "0.75em";
   }
 };
+
+export {};

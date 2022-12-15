@@ -1,4 +1,7 @@
 {
+  "future": {
+    "webpack5": true
+  },
   "compilerOptions": {
     "target": "es5",
     "downlevelIteration": true,
@@ -9,16 +12,19 @@
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "module": "esnext",
+    "module": "AMD",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": false,
-    "jsx": "react-jsx",
+    "isolatedModules": true,
+    "jsx": "preserve",
     "incremental": true,
     "baseUrl": "."
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/*"],
-  "exclude": ["node_modules"],
-  "rootDir": "./src/pages",
-  "outDir": "./src/compilejs"
+  "include": [
+    "next-env.d.ts",
+    "src/background/*",
+    "src/pages/*",
+    "src/components/**/*"
+  ],
+  "exclude": ["node_modules"]
 }

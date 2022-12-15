@@ -14,7 +14,6 @@ async function connection() {
 
 connection()
   .then((connection) => {
-    // console.log(connection);
     const result = connection.query(
       // "insert into users(name,password) values ('ryorgyo','1234abcd')"
       "SELECT * FROM users"
