@@ -3,23 +3,6 @@
   width: 38rem;
   border: #707070 solid 0.3rem;
 }
-.container .header {
-  padding: 1rem 2rem 0 2rem;
-}
-.container .header div {
-  border-bottom: #707070 solid 0.1rem;
-  position: relative;
-}
-.container .header div i {
-  position: absolute;
-}
-.container .header div h1 {
-  width: 34rem;
-  font-size: 2rem;
-  line-height: 2.2rem;
-  font-weight: bold;
-  margin: 0 0 1rem 3.2rem;
-}
 .container .content {
   padding: 1.6rem 2rem 1rem;
 }
@@ -82,15 +65,14 @@
   -webkit-transform: translate(50%, -50%);
   -ms-transform: translate(50%, -50%);
 }
-.container .content .box .ditails ul i {
-  display: hidden;
+.container .content .box .ditails ul svg {
+  display: none;
   position: absolute;
   top: 50%;
   left: 1.1rem;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  font-size: 0;
 }
 .container .content .box .ditails ul li {
   overflow-x: scroll;
@@ -115,4 +97,5 @@
 .container .content .box .btn button {
   border: #707070 solid 0.1rem;
   border-radius: 0.2rem;
+  margin-right: 0.5rem;
 }

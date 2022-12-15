@@ -111,3 +111,5 @@ window.onload = () => {
 };
 
 //dbDataが埋まっている時にbuttonを押す、もしくはsubmitを押す時に発生させるイベント
+
+export {};

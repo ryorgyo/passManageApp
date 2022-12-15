@@ -18,5 +18,9 @@
       "matches": ["<all_urls>"],
       "js": ["src/background/background.js", "src/background/passlist.js"]
     }
-  ]
+  ],
+  "background": {
+    "service_worker": "src/background/passlist.js",
+    "type": "module"
+  }
 }
